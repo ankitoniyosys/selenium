@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteName]">
+  <test name="TestA(failed)">
+    <classes>
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestA">
+        <methods>
+          <include name="testA1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestA -->
+    </classes>
+  </test> <!-- TestA(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->

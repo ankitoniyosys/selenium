@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">TestA</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">TestC</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">TestB</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">48.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">48.5 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">TestA &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.qtpselenium.core.ddf.testcases.DummyTestA<td><a href="#m1"><b>testA1</b>  </a></td><td class="numi">1</td><td class="numi">15</td></tr>
+<tr><th colspan="4">TestA &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.qtpselenium.core.ddf.testcases.DummyTestA<td><a href="#m2"><b>testA3</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m3"><b>testA2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">TestC &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.qtpselenium.core.ddf.testcases.DummyTestC<td><a href="#m4"><b>testC</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">TestB &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.qtpselenium.core.ddf.testcases.DummyTestB<td><a href="#m5"><b>testB</b>  </a></td><td class="numi">1</td><td class="numi">48451</td></tr>
+</table>
+<h1>TestA</h1>
+<a id="m1"></a><h2>com.qtpselenium.core.ddf.testcases.DummyTestA:testA1</h2>
+<div style="padding-left:3em">
+<p>null</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.fail(Assert.java:96)
+<br/>at com.qtpselenium.core.ddf.testcases.DummyTestA.testA1(DummyTestA.java:16)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.qtpselenium.core.ddf.testcases.DummyTestA:testA3</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.qtpselenium.core.ddf.testcases.DummyTestA:testA2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>TestC</h1>
+<a id="m4"></a><h2>com.qtpselenium.core.ddf.testcases.DummyTestC:testC</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>TestB</h1>
+<a id="m5"></a><h2>com.qtpselenium.core.ddf.testcases.DummyTestB:testB</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+isabled
+1482907198429	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1482907198431	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198432	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198432	addons.xpi	DEBUG	New add-on mozilla_cc@internetdownloadmanager.com installed in winreg-app-user
+1482907198457	addons.xpi-utils	DEBUG	Make addon winreg-app-user:mozilla_cc@internetdownloadmanager.com visible
+1482907198458	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198458	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198458	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1482907198463	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1482907198463	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198464	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198478	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1482907198478	addons.xpi-utils	DEBUG	Updating add-on states
+1482907198478	addons.xpi-utils	DEBUG	Writing add-ons list
+1482907198485	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1482907198486	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1482907198488	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1482907198489	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1482907199243	DeferredSave.extensions.json	DEBUG	Starting timer
+1482907199271	addons.manager	DEBUG	shutdown
+1482907199271	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1482907199271	addons.xpi	DEBUG	shutdown
+1482907199271	addons.xpi-utils	DEBUG	shutdown
+1482907199271	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1482907199272	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1482907199272	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1482907199274	DeferredSave.extensions.json	DEBUG	Starting write
+1482907199353	DeferredSave.extensions.json	DEBUG	Write succeeded
+1482907199353	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1482907199353	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1482907199358	addons.manager	DEBUG	Async provider shutdown done
+1482907200160	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1482907200161	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1482907200164	addons.xpi	DEBUG	startup
+1482907200164	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1482907200164	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1482907200165	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1482907200165	addons.xpi	INFO	Mapping mozilla_cc@internetdownloadmanager.com to C:\Users\ons\AppData\Roaming\IDM\idmmzcc5
+1482907200166	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\ons\AppData\Local\Temp\anonymous6757322847735648620webdriver-profile\extensions\fxdriver@googlecode.com
+1482907200166	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\ons\AppData\Local\Temp\anonymous6757322847735648620webdriver-profile\extensions\webdriver-staging
+1482907200166	addons.xpi	DEBUG	checkForChanges
+1482907200174	addons.xpi	DEBUG	No changes found
+1482907200177	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1482907200178	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1482907200179	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1482907200179	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1482907201396	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;ons-PC&apos;, ip: &apos;192.168.2.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at com.qtpselenium.core.ddf.base.BaseTest.openBrowser(BaseTest.java:21)
+<br/>at com.qtpselenium.core.ddf.testcases.DummyTestB.testB(DummyTestB.java:12)
+<br/>35 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+isabled
+1482907198429	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1482907198431	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198432	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198432	addons.xpi	DEBUG	New add-on mozilla_cc@internetdownloadmanager.com installed in winreg-app-user
+1482907198457	addons.xpi-utils	DEBUG	Make addon winreg-app-user:mozilla_cc@internetdownloadmanager.com visible
+1482907198458	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198458	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198458	addons.xpi	DEBUG	New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
+1482907198463	addons.xpi-utils	DEBUG	Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
+1482907198463	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198464	DeferredSave.extensions.json	DEBUG	Save changes
+1482907198478	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1482907198478	addons.xpi-utils	DEBUG	Updating add-on states
+1482907198478	addons.xpi-utils	DEBUG	Writing add-ons list
+1482907198485	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1482907198486	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1482907198488	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1482907198489	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1482907199243	DeferredSave.extensions.json	DEBUG	Starting timer
+1482907199271	addons.manager	DEBUG	shutdown
+1482907199271	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1482907199271	addons.xpi	DEBUG	shutdown
+1482907199271	addons.xpi-utils	DEBUG	shutdown
+1482907199271	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1482907199272	addons.manager	DEBUG	Calling shutdown blocker for OpenH264Provider
+1482907199272	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1482907199274	DeferredSave.extensions.json	DEBUG	Starting write
+1482907199353	DeferredSave.extensions.json	DEBUG	Write succeeded
+1482907199353	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1482907199353	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1482907199358	addons.manager	DEBUG	Async provider shutdown done
+1482907200160	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: [&quot;XPIProvider&quot;]
+1482907200161	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: [&quot;LightweightThemeManager&quot;]
+1482907200164	addons.xpi	DEBUG	startup
+1482907200164	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1482907200164	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1482907200165	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1482907200165	addons.xpi	INFO	Mapping mozilla_cc@internetdownloadmanager.com to C:\Users\ons\AppData\Roaming\IDM\idmmzcc5
+1482907200166	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\ons\AppData\Local\Temp\anonymous6757322847735648620webdriver-profile\extensions\fxdriver@googlecode.com
+1482907200166	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\ons\AppData\Local\Temp\anonymous6757322847735648620webdriver-profile\extensions\webdriver-staging
+1482907200166	addons.xpi	DEBUG	checkForChanges
+1482907200174	addons.xpi	DEBUG	No changes found
+1482907200177	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1482907200178	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1482907200179	addons.manager	DEBUG	Registering shutdown blocker for OpenH264Provider
+1482907200179	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1482907201396	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at com.qtpselenium.core.ddf.base.BaseTest.openBrowser(BaseTest.java:21)
+<br/>at com.qtpselenium.core.ddf.testcases.DummyTestB.testB(DummyTestB.java:12)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

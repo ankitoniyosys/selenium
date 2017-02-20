@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [SuiteName]">
+  <test name="TestA(failed)" preserve-order="false">
+    <classes>
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestA">
+        <methods>
+          <include name="testA1"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="TestB(failed)" preserve-order="false">
+    <classes>
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestB">
+        <methods>
+          <include name="testB"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
